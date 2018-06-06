@@ -57,7 +57,7 @@ numbers with a 5 in it. The start and the end number are both inclusive!
 2.  4 -> 17 should give 12
 3.  5 -> 5 should give 0
 4.  6 -> 6 should give 1
-5. -6 -> 16 should give
+5. -6 -> 16 should give 20
     
 ### 3. Persistent Bugger ###
 
