@@ -1,4 +1,5 @@
 function checkBugger(num) {
+  if (!isNaN(num)) num = '' + num;
   if (num.length == 1) return 0;
   else {
     var result = 1;
