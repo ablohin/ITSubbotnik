@@ -17,6 +17,22 @@ can be built with the sides of given length and false in any other case.
         return false;
     }
 
+##### Tests: #####
++ check for negative sides
+ 1. all sides: -58, -36, -47
++ one side
+ 1. first side: -1,3,5
+ 2. second side: 5, -6, 11
+ 3. third side: 99, 23, -56
++ two sides
+ 1. first and second: -23, -53, 66
+ 2. first and third: -33, 26, -56
+ 3. second and third: 125, -77, -34
++ different cases
+ 1. 1,2,2 should give true
+ 2. 3,4,5 should give true
+ 3. 11,2,9 should give false
+
 ### 2. Don't give me five! ###
 
 #### Description: #### 
@@ -36,6 +52,13 @@ numbers with a 5 in it. The start and the end number are both inclusive!
       return count;
     }
 
+##### Tests: #####
+1.  1 -> 9 should give 8
+2.  4 -> 17 should give 12
+3.  5 -> 5 should give 0
+4.  6 -> 6 should give 1
+5. -6 -> 16 should give
+    
 ### 3. Persistent Bugger ###
 
 #### Description: #### 
@@ -54,6 +77,13 @@ persistence, which is the number of times you must multiply the digits in num un
       }
       return 1.0 + abc("" + result);
     }
+    
+##### Tests: #####
+1. 999 should give 4
+2. 4 should give 0
+3. 39 should give 3
+4. 25 should give 2
+5. 105 should give 0
 
 ### 4. Molecules test ###
 
@@ -110,3 +140,9 @@ or other special signs, e.g.: H20, C02, CaS04.
 
       return result;
     }
+    
+##### Tests: #####
+1. water (H20 -> {H:2, O:1})
+2. something (Cu5Mg4Ne9 -> {Cu:5, Mg:3, Ne:9})
+3. Carbon dioxide (CO2 -> {C:1, O:2})
+4. Calcium sulfate (CaSO4 -> {Ca:1, S:1, O:4}) 
