@@ -6,5 +6,5 @@ function checkBugger(num) {
       result *= +num[i];
     }
   }
-  return 1.0 + abc("" + result);
+  return 1.0 + checkBugger("" + result);
 }
