@@ -9,7 +9,8 @@ can be built with the sides of given length and false in any other case.
 Solution:
 function checkTriangle(a, b, c) {
   if (a > 0 && b > 0 && c > 0) {
-      if (a < +(b + c) && b <= +(a + c) && c <= +(a + b)) return true;
+      if (a < +(b + c) && b <= +(a + c) && c <= +(a + b)) 
+      return true;
   }
   return false;
 }
