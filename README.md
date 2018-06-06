@@ -68,6 +68,7 @@ persistence, which is the number of times you must multiply the digits in num un
 ##### Solution: #####
 
     function checkBugger(num) {
+      if (!isNaN(num)) num = '' + num;
       if (num.length == 1) return 0;
       else {
         var result = 1;
@@ -75,7 +76,7 @@ persistence, which is the number of times you must multiply the digits in num un
           result *= +num[i];
         }
       }
-      return 1.0 + abc("" + result);
+      return 1.0 + checkBugger("" + result);
     }
     
 ##### Tests: #####
